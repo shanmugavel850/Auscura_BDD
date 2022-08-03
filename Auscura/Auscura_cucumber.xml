@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+     
+        
+         <listener class-name="demo1.listeners"/>
+         <listener class-name="resource.ExtentReporterNG"/>
+         
+
+ </listeners>
+
+  <test name="Validating User login">
+    <classes>
+      <class name="CucumberOptions.Login_testrunner"/>
+          </classes>
+      </test>
+      
+        <test name="Verify the Search functionality is working fine">
+    <classes>
+      <class name="CucumberOptions.search_testrunner"/>
+          </classes>
+      </test>
+      
+      
+   <!-- Test -->
+   
+</suite> <!-- Suite -->

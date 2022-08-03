@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="demo1.listeners"/>
+    <listener class-name="resource.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Verify the Search functionality is working fine(failed)">
+    <classes>
+      <class name="CucumberOptions.search_testrunner">
+        <methods>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- CucumberOptions.search_testrunner -->
+    </classes>
+  </test> <!-- Verify the Search functionality is working fine(failed) -->
+</suite> <!-- Failed suite [Suite] -->
